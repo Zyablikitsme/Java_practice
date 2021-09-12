@@ -10,9 +10,10 @@ public class Square extends Rectangle{
         this.side = side;
     }
 
-    public Square(String color, boolean filled, double width, double length, double side) { // ???
-        super(color, filled, width, length);
+    public Square(double side, String color, boolean filled){
         this.side = side;
+        this.color = color;
+        this.filled = filled;
     }
 
     public double getSide() {
@@ -23,13 +24,11 @@ public class Square extends Rectangle{
         this.side = side;
     }
 
-    public void setWidth(double side){
+    public void setWidth(double side){   // ???
         width = side;
-    }
+    } // ???
 
-    public void setLength(double side){
-        length = side;
-    }
+    public void setLength(double side){ length = side; } // ???
 
     @Override
     public String toString() {
