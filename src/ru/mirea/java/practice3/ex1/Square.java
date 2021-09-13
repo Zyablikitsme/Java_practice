@@ -1,4 +1,4 @@
-package ru.mirea.java.practice3;
+package ru.mirea.java.practice3.ex1;
 
 public class Square extends Rectangle{
     private double side; // ???
