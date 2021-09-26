@@ -19,22 +19,26 @@ public class MovableRectangle implements Movable{
 
     @Override
     public void moveUp() {
-
+        topLeft.moveUp();
+        bottomRight.moveUp();
     }
 
     @Override
     public void moveDown() {
-
+        topLeft.moveDown();
+        bottomRight.moveDown();
     }
 
     @Override
     public void moveLeft() {
-
+        topLeft.moveLeft();
+        bottomRight.moveLeft();
     }
 
     @Override
     public void moveRight() {
-
+        topLeft.moveRight();
+        bottomRight.moveRight();
     }
 
     public boolean isSpeedEqual(){
@@ -44,5 +48,4 @@ public class MovableRectangle implements Movable{
         }
         return false;
     }
-
 }
