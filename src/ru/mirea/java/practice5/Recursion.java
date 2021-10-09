@@ -43,6 +43,9 @@ public class Recursion {
             case 7:
                 break;
             case 8:
+                System.out.print("Введите строку: ");
+                String s = inp.next();
+                System.out.println(rec8(s));
                 break;
             case 9:
                 break;
@@ -66,6 +69,11 @@ public class Recursion {
                 System.out.print("n = ");
                 n = inp.nextInt();
                 rec15(n);
+                break;
+            case 16:
+
+            case 17:
+                System.out.println(rec17());
                 break;
         }
     }
@@ -118,6 +126,16 @@ public class Recursion {
         return "ERROR";
     }
 
+    public static String rec8(String word){ // OK
+        return rec8(word, 0);
+    }
+
+    public static String rec8(String word, int checkLetter){    // OK
+        if (word.charAt(checkLetter) != word.charAt(word.length() - checkLetter - 1)) return "NO";
+        if (checkLetter == word.length() / 2 - 1) return "YES";
+        return rec8(word, ++checkLetter);
+    }
+
     public static void rec10(int n){ // OK
         System.out.print(n % 10);
         if (n > 9) rec10(n/10);
@@ -144,17 +162,26 @@ public class Recursion {
 //
 //    }
 
+    public static int rec17(){  // OK
+        Scanner inp = new Scanner(System.in);
+        int x = inp.nextInt();
+        if (x == 0) return 0;
+        int y = rec17();
+        return x > y ? x : y;
+    }
+
+
 }
 
 
 //    1     OK
 //    2     OK
 //    3     OK
-//    4
+//    4     k znak numb sum = s
 //    5     OK
 //    6
 //    7
-//    8
+//    8     OK
 //    9
 //    10    OK
 //    11    strange
@@ -162,3 +189,5 @@ public class Recursion {
 //    13
 //    14    OK
 //    15    OK
+//    16
+//    17    OK
