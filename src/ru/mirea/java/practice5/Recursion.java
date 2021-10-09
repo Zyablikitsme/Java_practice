@@ -59,6 +59,7 @@ public class Recursion {
             case 12:
                 break;
             case 13:
+                rec13();
                 break;
             case 14:
                 System.out.print("n = ");
@@ -139,6 +140,17 @@ public class Recursion {
     public static void rec10(int n){ // OK
         System.out.print(n % 10);
         if (n > 9) rec10(n/10);
+    }
+
+    public static void rec13(){
+        Scanner inp = new Scanner(System.in);
+        int x = inp.nextInt();
+        if (x == 0)
+        System.out.println(inp.nextInt());
+        inp.nextInt();
+        rec13();
+
+
     }
 
     public static void rec14(int N){ // OK
