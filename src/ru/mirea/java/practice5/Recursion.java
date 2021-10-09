@@ -15,7 +15,9 @@ public class Recursion {
 
         switch(x){
             case 1:
-
+                System.out.print("n = ");
+                n = inp.nextInt();
+                rec1(n);
                 break;
             case 2:
                 System.out.print("n = ");
@@ -45,6 +47,9 @@ public class Recursion {
             case 9:
                 break;
             case 10:
+                System.out.print("n = ");
+                n = inp.nextInt();
+                rec10(n);
                 break;
             case 11:
                 break;
@@ -65,12 +70,16 @@ public class Recursion {
         }
     }
 
-    public static void rec1(int n){
-        int k = n;
-        n++;
-        for (int i = 0; i < n-k; i++){
+    public static void rec1(int n) { rec1(n, 0); }
 
+    public static void rec1(int n, int numbe){ // OK
+        for (int i = 1; i <= numbe; i++){
+            if (n > 0) n--;
+            else break;
+            System.out.print(numbe + " ");
         }
+
+        if (n > 0) rec1(n, numbe+1);
     }
 
     public static void rec2(int n){ // OK
@@ -83,6 +92,10 @@ public class Recursion {
 
         if (A < B) rec3(++A, B);
         else if (A > B) rec3(--A, B);
+    }
+
+    public static void rec4(int k, int s){
+
     }
 
     public static int rec5(int n){ // OK
@@ -103,6 +116,11 @@ public class Recursion {
         else rec6(x, del+1);
 
         return "ERROR";
+    }
+
+    public static void rec10(int n){ // OK
+        System.out.print(n % 10);
+        if (n > 9) rec10(n/10);
     }
 
     public static void rec14(int N){ // OK
@@ -127,3 +145,20 @@ public class Recursion {
 //    }
 
 }
+
+
+//    1     OK
+//    2     OK
+//    3     OK
+//    4
+//    5     OK
+//    6
+//    7
+//    8
+//    9
+//    10    OK
+//    11    strange
+//    12
+//    13
+//    14    OK
+//    15    OK
