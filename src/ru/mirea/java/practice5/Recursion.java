@@ -32,6 +32,8 @@ public class Recursion {
                 rec3(A, B);
                 break;
             case 4:
+                int k = inp.nextInt(), s = inp.nextInt();
+                System.out.println(rec4(0, 0, k, s));
                 break;
             case 5:
                 System.out.print("n = ");
@@ -39,8 +41,11 @@ public class Recursion {
                 System.out.println(rec5(n));
                 break;
             case 6:
+                System.out.println(rec6(18, 2));
                 break;
             case 7:
+                int nn = inp.nextInt(), kk = inp.nextInt();
+                rec7(nn, kk);
                 break;
             case 8:
                 System.out.print("Введите строку: ");
@@ -104,8 +109,21 @@ public class Recursion {
         else if (A > B) rec3(--A, B);
     }
 
-    public static void rec4(int k, int s){
+    public static int rec4(int len, int sum, int k, int s) {
+        if (len == k) {
+            if (sum == s) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+        int c = (len == 0 ? 1 : 0);
+        int res = 0;
 
+        for (int i = c; i < 10; i++) {
+            res += rec4(len + 1, sum + i, k, s);
+        }
+        return res;
     }
 
     public static int rec5(int n){ // OK
@@ -118,14 +136,24 @@ public class Recursion {
         return sum;
     }
 
-    public static String rec6(int x, int de){
-        int del = de;
+    public static boolean rec6(int n, int i) {
+        if (n < 2) return false;
+        else if (n == 2) return true;
+        else if (n % i == 0) return false;
+        else if (i < n / 2) return recursion(n, i + 1);
+        else return true;
+    }
 
-        if (x % del == 0 && del != x) return "YES";
-        else if (del == x) return "NO";
-        else rec6(x, del+1);
-
-        return "ERROR";
+    public static void rec7(int n, int k) {
+        if (k > n / 2) {
+            System.out.println(n);
+            return;
+        }
+        if (n % k == 0) {
+            System.out.println(k);
+            rec7(n / k, k);
+        }
+        else rec7(n, ++k);
     }
 
     public static String rec8(String word){ // OK

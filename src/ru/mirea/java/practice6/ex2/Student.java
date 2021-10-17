@@ -53,11 +53,6 @@ public class Student implements Comparable<Student> {
         return GPA;
     }
 
-
-//    public int compareTo(Student o) {
-//        return name.compareTo(o.getName());
-//    }
-
     @Override
     public int compareTo(Student s){
         if (this.age > s.age) return 1;
