@@ -143,14 +143,14 @@ public class Recursion {
         if (n > 9) rec10(n/10);
     }
 
-    public static int rec11(){
-        Scanner inp = new Scanner(System.in);
-        int x = inp.nextInt();
-        int y = rec11();
-        if (x == 1) return 1;
-
-
-    }
+//    public static int rec11(){
+//        Scanner inp = new Scanner(System.in);
+//        int x = inp.nextInt();
+//        int y = rec11();
+//        if (x == 1) return 1;
+//
+//
+//    }
 
     public static void rec12(){     // OK
         Scanner inp = new Scanner(System.in);
