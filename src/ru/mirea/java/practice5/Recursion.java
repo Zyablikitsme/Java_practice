@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Recursion {
 
-
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
         int x;
@@ -41,7 +40,8 @@ public class Recursion {
                 System.out.println(rec5(n));
                 break;
             case 6:
-                System.out.println(rec6(18, 2));
+                System.out.print("Проверить число: ");
+                System.out.println(rec6(inp.nextInt(), 2));
                 break;
             case 7:
                 int nn = inp.nextInt(), kk = inp.nextInt();
@@ -53,6 +53,8 @@ public class Recursion {
                 System.out.println(rec8(ss));
                 break;
             case 9:
+                int a = inp.nextInt(), b = inp.nextInt();
+                System.out.println(rec9(a, b));
                 break;
             case 10:
                 System.out.print("n = ");
@@ -60,6 +62,7 @@ public class Recursion {
                 rec10(n);
                 break;
             case 11:
+                System.out.println(rec11());
                 break;
             case 12:
                 rec12();
@@ -78,7 +81,8 @@ public class Recursion {
                 rec15(n);
                 break;
             case 16:
-
+                rec16(0, 0);
+                break;
             case 17:
                 System.out.println(rec17());
                 break;
@@ -87,7 +91,7 @@ public class Recursion {
 
     public static void rec1(int n) { rec1(n, 0); }
 
-    public static void rec1(int n, int numbe){ // OK
+    public static void rec1(int n, int numbe){
         for (int i = 1; i <= numbe; i++){
             if (n > 0) n--;
             else break;
@@ -97,12 +101,12 @@ public class Recursion {
         if (n > 0) rec1(n, numbe+1);
     }
 
-    public static void rec2(int n){ // OK
+    public static void rec2(int n){
         if (n != 1) rec2(n-1);
         System.out.print(n + " ");
     }
 
-    public static void rec3(int A, int B){ // OK
+    public static void rec3(int A, int B){
         System.out.println(A);
 
         if (A < B) rec3(++A, B);
@@ -126,7 +130,7 @@ public class Recursion {
         return res;
     }
 
-    public static int rec5(int n){ // OK
+    public static int rec5(int n){
         int sum = 0;
         if (n > 0) {
             sum += n % 10;
@@ -136,12 +140,12 @@ public class Recursion {
         return sum;
     }
 
-    public static boolean rec6(int n, int i) {
-        if (n < 2) return false;
-        else if (n == 2) return true;
-        else if (n % i == 0) return false;
-        else if (i < n / 2) return rec6(n, i + 1);
-        else return true;
+    public static String rec6(int n, int i) {
+        if (n < 2) return "NO";
+        else if (n == 2) return "YES";
+        else if (n % i == 0) return "NO";
+        else if (i < n/2) return rec6(n, i + 1);
+        else return "YES";
     }
 
     public static void rec7(int n, int k) {
@@ -160,27 +164,53 @@ public class Recursion {
         return rec8(word, 0);
     }
 
-    public static String rec8(String word, int checkLetter){    // OK
+    public static String rec8(String word, int checkLetter){
         if (word.charAt(checkLetter) != word.charAt(word.length() - checkLetter - 1)) return "NO";
         if (checkLetter == word.length() / 2 - 1) return "YES";
         return rec8(word, ++checkLetter);
     }
 
-    public static void rec10(int n){    // OK
+    public static int rec9(int a, int b) {
+        if (a > b + 1) {
+            return 0;
+        }
+        if (a == 0 || b == 0) {
+            return 1;
+        }
+        return rec9(a, b - 1) + rec9(a - 1, b - 1);
+    }
+
+    public static void rec10(int n){
         System.out.print(n % 10);
         if (n > 9) rec10(n/10);
     }
 
-//    public static int rec11(){
-//        Scanner inp = new Scanner(System.in);
-//        int x = inp.nextInt();
-//        int y = rec11();
-//        if (x == 1) return 1;
-//
-//
-//    }
+    public static int rec11() {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        if (n == 1) {
+            int m = in.nextInt();
+            if (m == 1) {
+                return rec11() + n + m;
+            } else {
+                int k = in.nextInt();
+                if (k == 1) {
+                    return rec11() + n + m + k;
+                } else {
+                    return n + m + k;
+                }
+            }
+        } else {
+            int m = in.nextInt();
+            if (m == 1) {
+                return rec11() + n + m;
+            } else {
+                return n + m;
+            }
+        }
+    }
 
-    public static void rec12(){     // OK
+    public static void rec12(){
         Scanner inp = new Scanner(System.in);
         int x = inp.nextInt();
         if (x != 0) {
@@ -189,7 +219,7 @@ public class Recursion {
         }
     }
 
-    public static void rec13(){     // OK
+    public static void rec13(){
         Scanner inp = new Scanner(System.in);
         int x = inp.nextInt();
         if (x != 0) {
@@ -200,28 +230,33 @@ public class Recursion {
 
     }
 
-    public static void rec14(int N){ // OK
+    public static void rec14(int N){
         if (N > 9) rec14(N / 10);
         System.out.println(N % 10);
     }
 
-    public static void rec15(int N){ // OK
+    public static void rec15(int N){
         System.out.println(N % 10);
         if (N > 9) rec15(N / 10);
     }
 
-//    public static void rec16(){
-//        int x = -1, max = x;
-//        while (x != 0) {
-//            Scanner inpt = new Scanner(System.in);
-//            x = inpt.nextInt();
-//            if (x > max) max = x;
-//        }
-//
-//
-//    }
+    public static void rec16(int max, int count) {
+        java.util.Scanner in = new java.util.Scanner(System.in);
+        int n = in.nextInt();
+        if (n > 0) {
+            if (n > max) {
+                rec16(n, 1);
+            } else if (n == max) {
+                rec16(max, ++count);
+            } else {
+                rec16(max, count);
+            }
+        } else {
+            System.out.println(count);
+        }
+    }
 
-    public static int rec17(){  // OK
+    public static int rec17(){
         Scanner inp = new Scanner(System.in);
         int x = inp.nextInt();
         if (x == 0) return 0;

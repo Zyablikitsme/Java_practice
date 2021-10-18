@@ -69,10 +69,6 @@ public class MergeSort {
 
         for (int i = 0; i < students_2.length; i++) students[i + students_1.length] = students_2[i];
 
-//        MergeSort_(students_1, 0, students_1.length-1);
-//        MergeSort_(students_2, 0, students_2.length-1);
-//        Merge_(students_1, students_2);
-
         System.out.println("Array before sort");
         for (int i = 0; i < students.length; i++) System.out.println(students[i]);
 
