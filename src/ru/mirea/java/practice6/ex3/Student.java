@@ -1,4 +1,4 @@
-package ru.mirea.java.practice6.ex2;
+package ru.mirea.java.practice6.ex3;
 
 public class Student implements Comparable<Student> {
     private String name, surname;
@@ -60,14 +60,22 @@ public class Student implements Comparable<Student> {
         else return -1;
     }
 
+//    @Override
+//    public String toString() {
+//        return "Student{" +
+//                "name='" + name + '\'' +
+//                ", surname='" + surname + '\'' +
+//                ", age=" + age +
+//                ", form=" + form +
+//                ", GPA=" + GPA +
+//                '}';
+//    }
+
+
     @Override
     public String toString() {
         return "Student{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", age=" + age +
-                ", form=" + form +
-                ", GPA=" + GPA +
+                "age=" + age +
                 '}';
     }
 }

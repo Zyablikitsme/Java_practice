@@ -49,8 +49,8 @@ public class Recursion {
                 break;
             case 8:
                 System.out.print("Введите строку: ");
-                String s = inp.next();
-                System.out.println(rec8(s));
+                String ss = inp.next();
+                System.out.println(rec8(ss));
                 break;
             case 9:
                 break;
@@ -140,7 +140,7 @@ public class Recursion {
         if (n < 2) return false;
         else if (n == 2) return true;
         else if (n % i == 0) return false;
-        else if (i < n / 2) return recursion(n, i + 1);
+        else if (i < n / 2) return rec6(n, i + 1);
         else return true;
     }
 
@@ -228,8 +228,6 @@ public class Recursion {
         int y = rec17();
         return x > y ? x : y;
     }
-
-
 }
 
 

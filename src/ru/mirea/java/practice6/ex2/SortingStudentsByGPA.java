@@ -53,7 +53,7 @@ public class SortingStudentsByGPA implements Comparable<SortingStudentsByGPA> {
         return GPA;
     }
 
-//    @Override // по возростанию
+//    @Override // по возрастанию
 //    public int compareTo(SortingStudentsByGPA s){
 //        if (this.GPA > s.GPA) return 1;
 //        else if (this.GPA == s.GPA) return 0;
@@ -67,14 +67,22 @@ public class SortingStudentsByGPA implements Comparable<SortingStudentsByGPA> {
         else return 1;
     }
 
+//    @Override
+//    public String toString() {
+//        return "SortingStudentsByGPA{" +
+//                "name='" + name + '\'' +
+//                ", surname='" + surname + '\'' +
+//                ", age=" + age +
+//                ", form=" + form +
+//                ", GPA=" + GPA +
+//                '}';
+//    }
+
+
     @Override
     public String toString() {
         return "SortingStudentsByGPA{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", age=" + age +
-                ", form=" + form +
-                ", GPA=" + GPA +
+                "GPA=" + GPA +
                 '}';
     }
 }

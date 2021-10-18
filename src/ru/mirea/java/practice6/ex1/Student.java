@@ -53,11 +53,6 @@ public class Student implements Comparable<Student> {
         return GPA;
     }
 
-
-//    public int compareTo(Student o) {
-//        return name.compareTo(o.getName());
-//    }
-
     @Override
     public int compareTo(Student s){
         if (this.age > s.age) return 1;
@@ -65,14 +60,22 @@ public class Student implements Comparable<Student> {
         else return -1;
     }
 
+//    @Override
+//    public String toString() {
+//        return "Student{" +
+//                "name='" + name + '\'' +
+//                ", surname='" + surname + '\'' +
+//                ", age=" + age +
+//                ", form=" + form +
+//                ", GPA=" + GPA +
+//                '}';
+//    }
+
+
     @Override
     public String toString() {
         return "Student{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", age=" + age +
-                ", form=" + form +
-                ", GPA=" + GPA +
+                "age=" + age +
                 '}';
     }
 }
