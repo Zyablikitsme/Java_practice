@@ -24,11 +24,11 @@ public class Address {
         this.address = address;
         this.separator = separator;
 
-        if(separator.equals(",")) Separation1();
-        else Separation2();
+        if(separator.equals(",")) separation1();
+        else separation2();
     }
 
-    public void Separation1(){
+    public void separation1(){
         String[] separatedAddress = this.address.split(",");
 
         for (int i = 0; i < 6; i++){
@@ -56,7 +56,7 @@ public class Address {
         }
     }
 
-    public void Separation2(){
+    public void separation2(){
         StringTokenizer separatedAddress = new StringTokenizer(address, separator);
 
         for (int i = 0; i < 6; i++){
