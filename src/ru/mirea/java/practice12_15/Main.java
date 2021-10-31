@@ -46,16 +46,31 @@ package ru.mirea.java.practice12_15;
 
 public class Main {
     public static void main(String[] args) {
-        Person P1 = new Person("Ivanov", "Ivan", "Ivanovich");
-        System.out.println(P1.getFullName());
+//        Person P1 = new Person("Ivanov", "Ivan", "Ivanovich");
+//        System.out.println(P1.getFullName());
+//
+//        P1.setName("Sergey");
+//        System.out.println(P1.getFullName());
+//
+//        Person P2 = new Person("Petrov");
+//        System.out.println(P2.getFullName());
+//
+//        P2.setPatronymic("Arkadievich");
+//        System.out.println(P2.getFullName());
 
-        P1.setName("Sergey");
-        System.out.println(P1.getFullName());
 
-        Person P2 = new Person("Petrov");
-        System.out.println(P2.getFullName());
+        // Страна[d] Регион[d] Город[d] Улица[d] Дом[d] Корпус[d] Квартира
 
-        P2.setPatronymic("Arkadievich");
-        System.out.println(P2.getFullName());
+        Address Adr1 = new Address("Russia, Moscow Oblast, Chechov, Uezdnaya, 2, -, 126", ",");
+        System.out.println(Adr1);
+
+        Address Adr2 = new Address("Russia, Moscow, Moscow, Mosfil'movskaya Ulitsa, 53, -, 24", ",");
+        System.out.println(Adr2);
+
+        Address Adr3 = new Address("Russia, Chelyabinskaya oblast', Troitsk, Alikhetovskaya Ulitsa, 34, -, -",",");
+        System.out.println(Adr3);
+
+        Address Adr4 = new Address("Russia, Leningrad Oblast, St Petersburg, Ulitsa Tipanova, 3, -, 5", ",");
+        System.out.println(Adr4);
     }
 }
