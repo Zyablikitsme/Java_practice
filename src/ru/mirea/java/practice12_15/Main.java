@@ -70,7 +70,14 @@ public class Main {
         Address Adr3 = new Address("Russia, Chelyabinskaya oblast', Troitsk, Alikhetovskaya Ulitsa, 34, -, -",",");
         System.out.println(Adr3);
 
-        Address Adr4 = new Address("Russia, Leningrad Oblast, St Petersburg, Ulitsa Tipanova, 3, -, 5", ",");
+        Address Adr4 = new Address("Russia: Chelyabinskaya oblast':Troitsk: Alikhetovskaya Ulitsa:34: -: -",":");
         System.out.println(Adr4);
+
+        Address Adr5 = new Address("Russia, Leningrad Oblast, St Petersburg, Ulitsa Tipanova, 3, -, 5", ",");
+        System.out.println(Adr5);
+
+        Address Adr6 = new Address("Russiaz Leningrad Oblastz St Petersburgz Ulitsa Tipanovaz 3z -z 5", "z");
+        System.out.println(Adr6);
+
     }
 }
