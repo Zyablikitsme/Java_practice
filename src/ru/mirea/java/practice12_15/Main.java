@@ -48,17 +48,17 @@ public class Main {
     public static void main(String[] args) {
 
         // Ex1
-//        Person P1 = new Person("Ivanov", "Ivan", "Ivanovich");
-//        System.out.println(P1.getFullName());
-//
-//        P1.setName("Sergey");
-//        System.out.println(P1.getFullName());
-//
-//        Person P2 = new Person("Petrov");
-//        System.out.println(P2.getFullName());
-//
-//        P2.setPatronymic("Arkadievich");
-//        System.out.println(P2.getFullName());
+        Person P1 = new Person("Ivanov", "Ivan", "Ivanovich");
+        System.out.println(P1.getFullName());
+
+        P1.setName("Sergey");
+        System.out.println(P1.getFullName());
+
+        Person P2 = new Person("Petrov");
+        System.out.println(P2.getFullName());
+
+        P2.setPatronymic("Arkadievich");
+        System.out.println(P2.getFullName());
 
 
         // Страна[d] Регион[d] Город[d] Улица[d] Дом[d] Корпус[d] Квартира
@@ -82,7 +82,7 @@ public class Main {
         Address Adr6 = new Address("Russiaz Leningrad Oblastz St Petersburgz Ulitsa Tipanovaz 3z -z 5", "z");
         System.out.println(Adr6);
 
-        // Ex3
+        // Ex 3
         String shirts[] = new String[11];
         shirts[0] = "S001,Black Polo Shirt,Black,XL";
         shirts[1] = "S002,Black Polo Shirt,Black,L";
@@ -101,5 +101,18 @@ public class Main {
             newShirts[i] = new Shirt(shirts[i]);
             System.out.println(newShirts[i]);
         }
+
+        // Ex 4
+        PhoneNumber N1 = new PhoneNumber("+79161234567");
+        System.out.println(N1);
+
+        PhoneNumber N2 = new PhoneNumber("+79775689073");
+        System.out.println(N2);
+
+        PhoneNumber N3 = new PhoneNumber("89157773525");
+        System.out.println(N3);
+
+        PhoneNumber N4 = new PhoneNumber("84951738130");
+        System.out.println(N4);
     }
 }
