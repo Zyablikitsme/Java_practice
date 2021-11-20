@@ -13,7 +13,7 @@
 :white_check_mark: [12-15](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice12_15)    
 :white_large_square: 16    
 :white_check_mark: [17-18](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice17_18)    
-:white_check_mark: [19-20](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice17_18)    
+:white_check_mark: [19-20](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice19_20)    
 :white_large_square: 21-22    
 :white_large_square: 23-24    
 :white_large_square: 25-26    
