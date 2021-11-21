@@ -6,12 +6,12 @@ public class Test {
     static public void arrTest(ArrayList<String> arr, String autoNumberForFind){
         System.out.print("\nПоиск перебором: номер");
 
-        long mNanos = System.nanoTime();
+        long nanos = System.nanoTime();
 
         if (arr.contains(autoNumberForFind)) System.out.print(" найден,");
         else System.out.print(" не найден,");
 
-        System.out.print(" поиск занял " + (double) (System.nanoTime() - mNanos) + "нс");
+        System.out.print(" поиск занял " + (double) (System.nanoTime() - nanos) + "нс");
     }
 
     static public void arrBinaryTest(ArrayList<String> arr, String autoNumberForFind){
@@ -19,36 +19,36 @@ public class Test {
 
         Collections.sort(arr);
 
-        long mNanos = System.nanoTime();
+        long nanos = System.nanoTime();
 
         int findedArrIndex = Collections.binarySearch(arr, autoNumberForFind);
 
         if (findedArrIndex >= 0) System.out.print(" найден,");
         else System.out.print(" не найден,");
 
-        System.out.print(" поиск занял " + (double) (System.nanoTime() - mNanos) + "нс");
+        System.out.print(" поиск занял " + (double) (System.nanoTime() - nanos) + "нс");
     }
 
     static public void hashSetTest(HashSet<String> hashS, String autoNumberForFind){
         System.out.print("\nПоиск в HashSet: номер");
 
-        long mNanos = System.nanoTime();
+        long nanos = System.nanoTime();
 
         if (hashS.contains(autoNumberForFind)) System.out.print(" найден,");
         else System.out.print(" не найден,");
 
-        System.out.print(" поиск занял " + (double) (System.nanoTime() - mNanos) + "нс");
+        System.out.print(" поиск занял " + (double) (System.nanoTime() - nanos) + "нс");
     }
 
     static public void treeSetTest(TreeSet<String> treeS, String autoNumberForFind){
         System.out.print("\nПоиск в TreeSet: номер");
 
-        long mNanos = System.nanoTime();
+        long nanos = System.nanoTime();
 
         if (treeS.contains(autoNumberForFind)) System.out.print(" найден,");
         else System.out.print(" не найден,");
 
-        System.out.print(" поиск занял " + (double) (System.nanoTime() - mNanos) + "нс\n\n");
+        System.out.print(" поиск занял " + (double) (System.nanoTime() - nanos) + "нс\n\n");
     }
 
     public static void main(String[] args) {
