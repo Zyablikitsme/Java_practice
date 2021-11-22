@@ -2,7 +2,7 @@
 :white_check_mark: [1](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice1)    
 :white_check_mark: [2](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice2)    
 :white_check_mark: [3](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice3)    
-:white_check_mark: [4](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice4)    
+:white_check_mark: [4](https://github.com/Zyablikitsme/Java_practice_4pr_JavaFX)    
 :white_check_mark: [5](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice5)    
 :white_check_mark: [6](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice6)    
 :white_large_square: 7    
