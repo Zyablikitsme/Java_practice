@@ -19,4 +19,4 @@
 :white_large_square: 25-26    
 :white_large_square: 27-28    
 :white_large_square: 29-30    
-:white_large_square: 31-32    
+:white_check_mark: [31-32](https://github.com/Zyablikitsme/Java_practice_31_32pr_Spring)
