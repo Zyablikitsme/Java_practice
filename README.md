@@ -13,10 +13,10 @@
 :white_check_mark: [12-15](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice12_15)    
 :white_large_square: 16    
 :white_check_mark: [17-18](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice17_18)    
-:white_check_mark: [19-20](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice19_20)    
-:white_large_square: 21-22    
+:heavy_check_mark: [19-20](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice19_20)    
+:heavy_check_mark: [21-22](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice21_22)    
 :white_large_square: 23-24    
 :white_large_square: 25-26    
 :white_large_square: 27-28    
 :white_large_square: 29-30    
-:white_check_mark: [31-32](https://github.com/Zyablikitsme/Java_practice_31_32pr_Spring)
+:heavy_check_mark: [31-32](https://github.com/Zyablikitsme/Java_practice_31_32pr_Spring)
