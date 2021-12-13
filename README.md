@@ -11,10 +11,10 @@
 :white_check_mark: [12-15](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice12_15)    
 ⬜ 16    
 :white_check_mark: [17-18](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice17_18)    
-🟩 [19-20](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice19_20)    
+:white_check_mark: [19-20](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice19_20)    
 :white_check_mark: [21-22](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice21_22)    
 ⬜ 23-24    
 ⬜ 25-26    
 ⬜ 27-28    
 ⬜ 29-30    
-🟩 [31-32](https://github.com/Zyablikitsme/Java_practice_31_32pr_Spring)
+:white_check_mark: [31-32](https://github.com/Zyablikitsme/Java_practice_31_32pr_Spring)
