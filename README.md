@@ -5,6 +5,8 @@
 :white_check_mark: [4](https://github.com/Zyablikitsme/Java_practice_4pr_JavaFX)    
 :white_check_mark: [5](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice5)    
 :white_check_mark: [6](https://github.com/Zyablikitsme/Java_practice/tree/master/src/ru/mirea/java/practice6)    
+⬜ 7    
+⬜ 8    
 ⬜ 9    
 ⬜ 10    
 ⬜ 11    
